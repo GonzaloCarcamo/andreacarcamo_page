@@ -1,48 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Andrea Cárcamo | Oficial</title>
-
+    <title>Andrea Carcamo | Oficial</title>
 </head>
 
 <body>
+    
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+        onclick="w3_close()">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">. B I O </a>
+        <a href="#" class="w3-bar-item w3-button">. C L A S E S </a>
+        <a href="#" class="w3-bar-item w3-button">. E V E N T O S </a>
+        <a href="#" class="w3-bar-item w3-button">. V O C A L . C O U C H </a>
+        <a href="#" class="w3-bar-item w3-button">. E N L A C E S </a>
+        <a href="#" class="w3-bar-item w3-button">. T E S T I M O N I O S </a>
+        <a href="#" class="w3-bar-item w3-button">. C O N T A C T O </a>
+      </div>
+ 
+      
+      <div id="main">
+        
+      <div class="w3-navbar">
+        <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+        <div class = "rrss my-5">
+          <i class="fab fa-youtube fa-3x"></i>
+          <i class="fab fa-instagram fa-3x"></i>
+          <i class="fab fa-facebook fa-3x"></i>
+        </div>
+      </div>
+      
+      </div>
+      
+      <script>
+      function w3_open() {
+        document.getElementById("main").style.marginLeft = "25%";
+        document.getElementById("mySidebar").style.width = "25%";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("openNav").style.display = 'none';
+      }
+      function w3_close() {
+        document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("openNav").style.display = "inline-block";
+      }
+      </script>
 
-  <!-- Sidebar -->
-<div class="w3-sidebar w3-light w3-bar-block my-3" style="width:28%">
-  <a href="#" class="w3-bar-item w3-button my-5"> . A N D R E A . C A R C A M O </a>
-  <a href="#" class="w3-bar-item w3-button"> . H O M E </a>
-  <a href="#" class="w3-bar-item w3-button"> . B I O </a>
-  <a href="#" class="w3-bar-item w3-button"> . C L A S E S </a>
-  <a href="#" class="w3-bar-item w3-button"> . E V E N T O S </a>
-  <a href="#" class="w3-bar-item w3-button"> . V O C A L . C O U C H </a>
-  <a href="#" class="w3-bar-item w3-button"> . C O N T A C T O </a>
 
-  <i class="fab fa-instagram fa-2x my-5 mr-2 ml-3"></i>
-  <i class="fab fa-facebook fa-2x mr-2"></i>
-  <i class="fab fa-youtube fa-2x mr-2"></i>
-  <i class="fab fa-whatsapp fa-2x mr-2"></i>
-  
-</div>
+    <div class="front">
+        <img src="./img/one.png" alt="photo">
+    </div>
+
+    <div>
+        <h2>Hola soy timi</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, dolores, sint unde incidunt debitis magnam neque suscipit corrupti veniam nesciunt culpa? Eos dolorum incidunt amet! Ex quia saepe dolorum ipsum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, maxime. Excepturi fugiat atque nisi similique optio, asperiores ab, in odit consequatur, harum non nobis iusto blanditiis eveniet deserunt aperiam voluptas?</p>
+    </div>
 
 
-  <div class="main"><img src="./img/hero.png" alt="main"></div>
+  <div class="row">
+    <div class=col-md-6>
+      <i class="fab fa-whatsapp-square fa-5x"></i>
+      <div class="w3-container w3-center">
+        <p>+56 9 50869897</p>
+      </div>
+    </div>
 
-  <footer class="fixed-bottom">
-    <p>Copyright | Santiago de Chile | 2020</p>
+    <div class=col-md-6>
+      <i class="fas fa-envelope-square fa-5x"></i>
+      <div class="w3-container w3-center">
+        <p>+gonzalo.eduardo.carcamo@gmail.com</p>
+      </div>
+    </div>
 
-  </footer>
+  </div>
 
+    <footer>
+        <h2>soy el footer</h2>
+    </footer>
+      
+    
 </body>
 
 </html>

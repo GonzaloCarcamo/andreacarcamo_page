@@ -1,11 +1,35 @@
 .main{
-    margin-left: 380px;
-  
+    text-align: center;
+}
+
+h2{
+    text-align: center
+}
+
+p{
+    text-align: center;
 }
 
 footer{
-    margin-right: 970px;
     background-color: black;
-    color: white;
+}
+
+.row{
+    text-align: center;
+}
+
+.w3-card-4{
+    display: inline-block;
+}
+
+footer{
     height: 100px;
+}
+
+.rrss{
+    text-align: right;
+}
+
+.w3-navbar{
+    display: inline-flexbox;
 }
